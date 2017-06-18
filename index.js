@@ -235,7 +235,7 @@ YamahaAVRPlatform.prototype = {
     }
 };
 
-function YamahaSwitch(log, config, name, yamaha, sysConfig, preset) {
+/*function YamahaSwitch(log, config, name, yamaha, sysConfig, preset) {
     this.log = log;
     this.config = config;
     this.yamaha = yamaha;
@@ -312,7 +312,7 @@ YamahaSwitch.prototype = {
 
         return [informationService, switchService];
     }
-};
+};*/
 
 function YamahaZone(log, config, name, yamaha, sysConfig, zone) {
     this.log = log;

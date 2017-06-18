@@ -341,6 +341,7 @@ YamahaZone.prototype = {
                 else return Q();
             }).then(function() {
                 if (that.setMainInputTo) return yamaha.setMainInputTo(that.setMainInputTo);
+                if (that.setMainInputTo) return yamaha.setInputTo(that.setMainInputTo, 2);
                 else return Q();
             }).then(function() {
                 if (that.setMainInputTo == "AirPlay") return yamaha.SendXMLToReceiver(
@@ -445,6 +446,7 @@ YamahaAVRAccessory.prototype = {
                 else return Q();
             }).then(function() {
                 if (that.setMainInputTo) return yamaha.setMainInputTo(that.setMainInputTo);
+                if (that.setMainInputTo) return yamaha.setInputTo(that.setMainInputTo, 2);
                 else return Q();
             }).then(function() {
                 if (that.setMainInputTo == "AirPlay") return yamaha.SendXMLToReceiver(

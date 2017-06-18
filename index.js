@@ -415,7 +415,7 @@ YamahaZone.prototype = {
 };
 
 
-function YamahaAVRAccessory(log, config, name, yamaha, sysConfig) {
+/*function YamahaAVRAccessory(log, config, name, yamaha, sysConfig) {
     this.log = log;
     this.config = config;
     this.yamaha = yamaha;
@@ -622,4 +622,4 @@ YamahaAVRAccessory.prototype = {
         return [informationService, switchService, audioDeviceService, inputService, mainService];
 
     }
-};
+};*/

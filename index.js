@@ -319,6 +319,7 @@ function YamahaZone(log, config, name, yamaha, sysConfig, zone) {
     this.config = config;
     this.yamaha = yamaha;
     this.sysConfig = sysConfig;
+    this.setMainInputTo = config["setMainInputTo"];
 
     this.minVolume = config["min_volume"] || -50.0;
     this.maxVolume = config["max_volume"] || -20.0;

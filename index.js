@@ -340,7 +340,12 @@ YamahaZone.prototype = {
                 if (that.playVolume) return yamaha.setVolumeTo(that.playVolume * 10, that.zone);
                 else return Q();
             }).then(function() {
+<<<<<<< HEAD
                 if (that.setMainInputTo) return yamaha.setInputTo(that.setMainInputTo, that.zone);
+=======
+                if (that.setMainInputTo) return yamaha.setMainInputTo(that.setMainInputTo);
+                if (that.setMainInputTo) return yamaha.setInputTo(that.setMainInputTo, 2);
+>>>>>>> 211133ecf4d8525768d4220b1296d32aecc5cd20
                 else return Q();
             }).then(function() {
                 if (that.setMainInputTo == "AirPlay") return yamaha.SendXMLToReceiver(
@@ -444,7 +449,12 @@ YamahaAVRAccessory.prototype = {
                 if (that.playVolume) return yamaha.setVolumeTo(that.playVolume * 10, that.zone);
                 else return Q();
             }).then(function() {
+<<<<<<< HEAD
                 if (that.setMainInputTo) return yamaha.setInputTo(that.setMainInputTo, that.zone);
+=======
+                if (that.setMainInputTo) return yamaha.setMainInputTo(that.setMainInputTo);
+                if (that.setMainInputTo) return yamaha.setInputTo(that.setMainInputTo, 2);
+>>>>>>> 211133ecf4d8525768d4220b1296d32aecc5cd20
                 else return Q();
             }).then(function() {
                 if (that.setMainInputTo == "AirPlay") return yamaha.SendXMLToReceiver(
